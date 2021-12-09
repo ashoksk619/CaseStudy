@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Faculty.master.cs" Inherits="CaseStudy.Faculty1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+       <style type="text/css">
+        .toppane{
+    width: 100%;
+    height: 50px;
+    border-collapse: collapse;
+    background-color: white;
+    flex-direction:row;
+    align-items:center;
+    background-color:antiquewhite;
+    font-weight:bold;
+    
+	background-size:cover;
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <center>
+
+        <div class="toppane">
+           
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="hy1" runat="server" Text="Home" NavigateUrl="~/FacultyWelcome.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+             &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy2" runat="server" Text="Students Info" NavigateUrl="~/StudentsInfo.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <asp:HyperLink ID="Hy3" runat="server" Text="Add Marks" NavigateUrl="~/AddMarks.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                
+                 &nbsp;&nbsp;|&nbsp;&nbsp;
+                <asp:HyperLink ID="Hyp5" runat="server" Text="Marks-Info" NavigateUrl="~/ShowMarkDetails.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                 &nbsp;&nbsp;|&nbsp;&nbsp;
+                <asp:HyperLink ID="Hyp6" runat="server" Text="ChangePassword" NavigateUrl="~/FalcPass.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+             &nbsp;&nbsp;|&nbsp;&nbsp;
+                <asp:HyperLink ID="Hyp7" runat="server" Text="Profile" NavigateUrl="~/Profile.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                 &nbsp;&nbsp;|&nbsp;&nbsp;
+                <asp:HyperLink ID="Hype5" runat="server" Text="Logout" NavigateUrl="~/Login.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+              
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+        </div>
+            </center>
+    </form>
+</body>
+</html>

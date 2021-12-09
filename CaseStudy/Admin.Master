@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CaseStudy.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .toppane{
+    width: 100%;
+    height: 50px;
+    border-collapse: collapse;
+    background-color: white;
+    flex-direction:row;
+    align-items:center;
+    background-color:antiquewhite;
+    font-weight:bold;
+    
+	background-size:cover;
+}
+    </style>
+</head>
+<body>
+        <form id="form1" runat="server">
+            <center>
+            <div class="toppane">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="hy1" runat="server" Text="Home" NavigateUrl="~/UserWelcome.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy2" runat="server" Text="Classes" NavigateUrl="~/Class.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy3" runat="server" Text="Students" NavigateUrl="~/students.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy4" runat="server" Text="Faculty" NavigateUrl="~/faculty.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy5" runat="server" Text="Faculty-Class Map" NavigateUrl="~/facultyclass.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+                      &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy6" runat="server" Text="Log out" NavigateUrl="~/Login.aspx" ForeColor="Black" Font-Size="Large"></asp:HyperLink>
+            </div>
+                </center>
+            
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+    </form>
+</body>
+</html>
